@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class laptop {
+public class Laptop {
     private final String company;
     private final String type;
     private final String serialNumber;
@@ -12,7 +12,7 @@ public class laptop {
 
     private double price;
 
-    public laptop(String company, String type, String serialNumber, String color, String processor, int ram, double price){
+    public Laptop(String company, String type, String serialNumber, String color, String processor, int ram, double price){
         this.company = company;
         this.type = type;
         this.serialNumber = serialNumber;
@@ -49,7 +49,7 @@ public class laptop {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        laptop laptop = (laptop) o;
+        Laptop laptop = (Laptop) o;
         return Objects.equals(serialNumber, laptop.serialNumber);
     }
     @Override
